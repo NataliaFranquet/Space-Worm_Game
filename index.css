@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+}
+.bg-img {
+  background-image: url("./spaceBg.jpg");
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-transp {
+  background-color: rgba(255,255,255, 0.1);
+  width: 100vw;
+  height: 100vh;
+}
+
+#canvas {
+  background-color: black;
+  display: none;
+}
+
+h1 {
+  display: flex;
+  letter-spacing: 30px;
+  font-size: 60px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  position: relative;
+  top: 300px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#start-button {
+  padding: 10px 15px 10px 30px;
+  letter-spacing: 1rem;
+  border: 1px solid rgba(255,255,255, 0.3);
+  cursor: pointer;
+  background-color:inherit;
+  color: #ffffff;
+  font-family: 'Space Mono', monospace;
+  font-size: 40px;
+  transition: all 0.8s linear;
+  transform: scale(0.6, 0.6);
+}
+
+#start-button:hover {
+  background-color: #ffffff;
+  color: inherit;
+  transition: all 0.8s linear;
+}
+
+#reset-button {
+  position: absolute;
+  padding: 5px 7px 5px 15px;
+  letter-spacing: 1px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-70%);
+  display: none;
+  background-color:black;
+  color: white;
+  border: 1px solid rgba(255,255,255, 0.3);;
+  font-family: 'Space Mono', monospace;
+  font-size: 30px;
+  transition: all 0.8s linear;
+  border: 1px solid rgba(255,255,255, 0.3);
+}
+
+#reset-button:hover {
+  background-color: #ffffff;
+  color: inherit;
+  transition: all 0.8s linear;
+}
+
+
+
+
+
